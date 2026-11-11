@@ -195,7 +195,7 @@ class OrganizerTests(unittest.TestCase):
         plan = scan(self.root, by_month=True)
         from datetime import datetime
         month = datetime.fromtimestamp(source.stat().st_mtime).strftime("%Y/%m")
-        self.assertEqual(plan.items[0].destination, self.root / "Organizados" / "Documentos" / month / "arquivo.txt")
+        self.assertEqual(plan.items[0].destination, self.root.resolve() / "Organizados" / "Documentos" / month / "arquivo.txt")
 
     def test_csv_is_utf8_and_exclusive(self):
         self.file("documentação.txt")
