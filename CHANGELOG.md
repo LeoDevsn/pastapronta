@@ -1,5 +1,10 @@
 # Alterações
 
+## 1.1.1
+
+- Corrige validação de caminhos curtos do Windows na suíte de testes.
+- Atualiza as ações de checkout e configuração de Python no GitHub.
+
 ## 1.1.0
 
 - Executável portátil para Windows, sem instalação de Python.
